@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>JAVASCRIPT Calculator </title>
+<script >
+
+function addNum()
+{
+ num1=parseInt(document.frmadd.txt1.value);
+ num2=parseInt(document.frmadd.txt2.value);
+ num3=num1+num2;
+ document.frmadd.txt3.value=num3;
+}
+function subNum()
+{
+ num1=parseInt(document.frmadd.txt1.value);
+ num2=parseInt(document.frmadd.txt2.value);
+ num3=num1-num2;
+ document.frmadd.txt3.value=num3;
+
+}
+function mulNum()
+{
+ num1=parseInt(document.frmadd.txt1.value);
+ num2=parseInt(document.frmadd.txt2.value);
+ num3=num1*num2;
+ document.frmadd.txt3.value=num3;
+}
+function divNum()
+{
+ num1=parseInt(document.frmadd.txt1.value);
+ num2=parseInt(document.frmadd.txt2.value);
+ num3=num1/num2;
+ document.frmadd.txt3.value=num3;
+}
+
+</script>
+
+</head>
+<body>
+    <div id="D1">
+    <H2>  JAVASCRIPT Calculator</H2>
+<form name="frmadd">
+
+ <label><b>First Number</b></label>
+ <br>
+ <input type ="text" name="txt1" >
+      <br><br>
+ <label><b>Second Number</b></label>
+ <br>
+<input type ="text" name="txt2" >
+      <br><br>
+<label><b>Result</b></label>
+       <br>
+<input type ="text" name="txt3" disabled>
+<br>
+<br>
+ <input type="button" value="Click Here For Addition" name"but1" onClick="addNum()"><br> <br>
+ <input type="button" value="Click Here For Substraction" name"but2" onClick="subNum()"><br> <br>
+ <input type="button" value="Click Here For Multiplication" name"but3" onClick="mulNum()"><br> <br>
+ <input type="button" value="Click Here For Division" name"but4" onClick="divNum()"><br> <br>
+</Div>
+</form>
+</body>
+</html>
